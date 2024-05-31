@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="v1" alignment="CENTER" prefHeight="365.0" prefWidth="554.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="com.example.calcolatrice.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <TextField fx:id="firstAdd" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="150.0" promptText="1° valore" translateX="-150.0" translateY="45.0" />
+   <TextField fx:id="secondAdd" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="150.0" promptText="2° valore" VBox.vgrow="ALWAYS" />
+   <TextField fx:id="operando1" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="150.0" promptText="risultato" translateX="150.0" translateY="-45.0" />
+
+    <Label fx:id="welcomeText" />
+   <Button mnemonicParsing="false" onAction="#plusButton" prefHeight="25.0" prefWidth="70.0" text="+" textAlignment="CENTER" translateX="190.0" />
+    <Button onAction="#minusButton" prefHeight="25.0" prefWidth="70.0" text="-" translateX="73.0" translateY="-45.0" />
+   <Button alignment="CENTER" mnemonicParsing="false" onAction="#perButton" prefHeight="25.0" prefWidth="70.0" text="*" translateX="-50.0" translateY="-90.0" />
+   <Button mnemonicParsing="false" onAction="#divButton" prefHeight="25.0" prefWidth="70.0" text="/" translateX="-190.0" translateY="-135.0" />
+</VBox>
